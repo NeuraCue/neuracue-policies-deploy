@@ -5,8 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Disable server-side features for static export
   reactStrictMode: true,
+  // Ensure CSS is properly bundled
+  experimental: {
+    optimizeCss: false,
+  },
 };
 
 export default nextConfig;
