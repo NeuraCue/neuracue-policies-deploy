@@ -1,14 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  reactStrictMode: true,
   images: {
     unoptimized: true,
-  },
-  reactStrictMode: true,
-  // Ensure CSS is properly bundled
-  experimental: {
-    optimizeCss: false,
   },
 };
 
