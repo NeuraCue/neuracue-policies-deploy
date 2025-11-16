@@ -50,6 +50,51 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <style>{`
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #191970;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
+          main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+          }
+          h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+          }
+          h2 {
+            margin: 1.5rem 0 1rem 0;
+          }
+          p {
+            max-width: 600px;
+            text-align: center;
+            margin: 0.5rem 0;
+          }
+          a {
+            color: #38bdf8;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        `}</style>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
