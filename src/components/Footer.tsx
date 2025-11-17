@@ -51,6 +51,7 @@ export default function Footer() {
 
   return (
     <footer
+      className="text-center"
       style={{
         fontSize: '0.8em',
         marginTop: '3rem',
